@@ -415,10 +415,10 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 .contact-icon a {
-  color: #333;
+  color: #666;
 }
 
 .contact-icon a:hover,
 .contact-icon a:focus {
-  color: #563bc1;
+  color: #222;
 }
