@@ -414,3 +414,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+.contact-icon a {
+  color: #333;
+}
+
+.contact-icon a:hover,
+.contact-icon a:focus {
+  color: #563bc1;
+}
