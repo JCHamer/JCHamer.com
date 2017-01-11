@@ -61,4 +61,11 @@
         }
     });
 
+    // Collapse different project expansions
+    var $projCol = $('#projects-collapse');
+    $projCol.on('show.bs.collapse', function()  {
+        $projCol.find('.collapse.in').collapse('hide');
+    });
+
+
 })(jQuery); // End of use strict

@@ -141,40 +141,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">Favorite Projects</h2>
                     <hr class="light">
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="projects-collapse">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#diamond">
                     <div class="project-box">
                         <i class="fa fa-4x fa-diamond text-faded sr-icons"></i>
                         <h3>Sturdy Templates</h3>
                         <p class="text-faded">Our templates are updated regularly so they don't break.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#plane">
                     <div class="project-box">
                         <i class="fa fa-4x fa-paper-plane text-faded sr-icons"></i>
                         <h3>Ready to Ship</h3>
                         <p class="text-faded">You can use this theme as is, or you can make changes!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#newspaper">
                     <div class="project-box">
                         <i class="fa fa-4x fa-newspaper-o text-faded sr-icons"></i>
                         <h3>Up to Date</h3>
                         <p class="text-faded">We update dependencies to keep things fresh.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#heart">
                     <div class="project-box">
                         <i class="fa fa-4x fa-heart text-faded sr-icons"></i>
                         <h3>Made with Love</h3>
                         <p class="text-faded">You have to make your websites with love these days!</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="accordion-group">
+                <div class="collapse indent" id="diamond">
+                    Diamonds
+                </div>
+                <div class="collapse indent" id="plane">
+                    Planes!
+                </div>
+                <div class="collapse" id="newspaper">
+                    Newspapers
+                </div>
+                <div class="collapse" id="heart">
+                    Heart
                 </div>
             </div>
         </div>
@@ -215,7 +230,7 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
 
 </body>
 
