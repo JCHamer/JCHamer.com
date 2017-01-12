@@ -66,6 +66,4 @@
     $projCol.on('show.bs.collapse', function()  {
         $projCol.find('.collapse.in').collapse('hide');
     });
-
-
 })(jQuery); // End of use strict

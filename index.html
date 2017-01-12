@@ -79,15 +79,13 @@
                     <h2 class="section-heading">About Me</h2>
                     <hr class="light">
                     <div class="row">
-                        <p class="text-faded col-md-8">I'm a junior studying Computer Science at the University of Michigan through the College of Engineering. I recently completed EECS 281, Data Structures and Algorithms, with an A-. My favorite non-major class was RCHUMS 250, a chamber music class where I played in a different small ensemble each semester and got the chance to further develop my musicality and create music with a smaller group.</p>
-                        <div class="col-md-4">
-                             <img src="img/portrait.jpg" class="img-responsive" alt="">
-                        </div>
+                        <p class="text-faded col-md-8 text-md-right about-content">I'm a junior studying Computer Science at the University of Michigan through the College of Engineering. I recently completed EECS 281, Data Structures and Algorithms, with an A-. My favorite non-major class was RCHUMS 250, a chamber music class where I played in a different small ensemble each semester and got the chance to further develop my musicality and create music with a smaller group.</p>
+                        <img src="img/portrait.jpg" class="img-responsive col-md-4 about-content" alt="">
                     </div>
                 </div>
             </div>
 			<div style="text-align: center;">
-				<a href="resources/JonathanHamermesh_Resume.pdf" class="btn btn-default btn-xl sr-button" style="margin-top: 15px;">My Resume</a>
+				<a href="resources/JonathanHamermesh_Resume.pdf" class="btn btn-default btn-xl sr-button" style="margin-top: 15px;">My Resume <i class="fa fa-download sr-icons"></i></a>
 			</div>
         </div>
     </section>
@@ -159,11 +157,14 @@
                 <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#pyTutor">
                     <div class="project-box">
                         <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
-                        <i class="icon icon ion-social-python text-faded sr-icons" style="font-size: 2.5em;"></i>
+                        <!--<i class="icon icon ion-social-python text-faded sr-icons" style="font-size: 2.5em;"></i>-->
                         <h3>PyTutor</h3>
                         <p class="text-faded">I worked with a friend to create an interactive python tutor for the <em>Hour of Code</em></p>
                     </div>
                 </div>
+
+				<div class="clearfix visible-md-block"></div>
+
                 <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#mechKeyboard">
                     <div class="project-box">
                         <i class="fa fa-4x fa-keyboard-o text-faded sr-icons"></i>
@@ -174,23 +175,25 @@
                 <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#customCatan">
                     <div class="project-box">
                         <i class="fa fa-4x fa-gamepad text-faded sr-icons"></i>
-                        <h3>Custom Settlers of Catan Board</h3>
+                        <h3>Settlers of Catan Board</h3>
                         <p class="text-faded">A custom <em>Settlers of Catan</em> board that I designed and laser printed.</p>
                     </div>
                 </div>
             </div>
 
             <div class="accordion-group">
-                <div class="collapse indent" id="musicalMarkov">
-                    <a href="https://github.com/JCHamer/MusicalMarkov" class="text-faded">Musical Markov</a>
+                <div class="collapse indent project-card" id="musicalMarkov">
+					<div class="row">
+						<p class="col-md-8"> This past semester, I took a Linear Algebra Class. The class culminated in an open-ended group final project. My team of four eventually settled on Algorithmic Music Generation, through which we studied the application of Markov Chains and the sequential progression using the weights from the stochastic transition matrix as well as the previous state of the output in order to generate a sequence of musical notes and durations. <a href="https://github.com/JCHamer/MusicalMarkov">Musical Markov</a></p>
+					</div>
                 </div>
-                <div class="collapse indent" id="pyTutor">
-                    <a href="https://github.com/JCHamer/PyTutor" class="text-faded">PyTutor</a>
+                <div class="collapse indent project-card" id="pyTutor">
+                    <a href="https://github.com/JCHamer/PyTutor">PyTutor</a>
                 </div>
-                <div class="collapse" id="mechKeyboard">
+				<div class="collapse indent project-card" id="mechKeyboard">
                     Mechanical Keyboard Project
                 </div>
-                <div class="collapse" id="customCatan">
+                <div class="collapse indent project-card" id="customCatan">
                     Custom Catan Board
                 </div>
             </div>
