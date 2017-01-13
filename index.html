@@ -162,9 +162,7 @@
                         <p class="text-faded">I worked with a friend to create an interactive python tutor for the <em>Hour of Code</em></p>
                     </div>
                 </div>
-
 				<div class="clearfix visible-md-block"></div>
-
                 <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#mechKeyboard">
                     <div class="project-box">
                         <i class="fa fa-4x fa-keyboard-o text-faded sr-icons"></i>
@@ -184,8 +182,30 @@
             <div class="accordion-group">
                 <div class="collapse indent project-card" id="musicalMarkov">
 					<div class="row">
-						<p class="col-md-8">This past semester, I took a Linear Algebra Class. The class culminated in an open-ended group final project. My team of four eventually settled on Algorithmic Music Generation, through which we studied the application of Markov Chains and the sequential progression using the weights from the stochastic transition matrix as well as the previous state of the output in order to generate a sequence of musical notes and durations. <a href="https://github.com/JCHamer/MusicalMarkov">Musical Markov</a></p>
+                        <figure class="col-md-4 figure">
+                            <figcaption class="figure-caption text-center">Yankee Doodle</figcaption>
+                            <img class="figure-img img-fluid img-center" src="img/YankeeDoodle.png">
+                        </figure>
+						<p class="col-md-8">At the end of my Linear Algebra Class, my team of four decided to explore Algorithmic Music Generation. We studied the application of Markov Chains to music generation and mapped a sequential progression using the weights from the stochastic transition matrix as well as the previous state of the output in order to generate a sequence of musical notes and durations. Most of the code we wrote can be found <a href="https://github.com/JCHamer/MusicalMarkov">here</a>.</p>
 					</div>
+                    <div class="row">
+                        <p class="col-md-6">We decided to use Yankee Doodle to build our transition weights. I wrote a quick python script and read in all the notes and their durations, and then counted the number of appearances of 'g's out of the total notes and used that to build a naive 0-order transition matrix. I then counted the frequency of all the permutations of two note sequences to build the first order matrix that used a state value to determine the next note weights based on the note that was previously played. Following this, the count was a three note sequence to build the second order matrix in a similar manner. I also followed the exact same process to create transition matrices for each note duration that shows up in Yankee Doodle - quarter, eighth, dotted eighth and sixteenth note. After I had produced the transition matrices, a friend wrote a MATLAB script to simulate the sequence following my weights to produce a seqeunce of notes and corresponding durations. Afterwards I formatted the results and ran them through <a href="https://mdoege.github.io/PySynth/">PySynth</a>, a music synthesizer written in Python, which output a .wav file that sounded like a Piano playing the music that was input.</p>
+
+                        <img class="img-responsive col-md-6" src="img/MMDecisionTree.png">
+					</div>
+                    <div class="row" id="audio-controls">
+                        <audio id="Order0Plyr">
+                            <source src="resources/Order0Song.mp3" type="audio/mpeg" />
+                            <source src="resources/Order0Song.ogg" type="audio/ogg" />
+                        </audio>
+                        <button class="btn btn-default btn-xl sr-button col-md-2 col-md-offset-3" onClick="document.getElementById('Order0Plyr').play()">0 Order Song <i class="fa fa-play sr-icons"></i></a>
+
+                        <audio id="Order2Plyr">
+                            <source src="resources/Order2Song.mp3" type="audio/mpeg" />
+                            <source src="resources/Order2Song.ogg" type="audio/ogg" />
+                        </audio>
+                        <button class="btn btn-default btn-xl sr-button col-md-2 col-md-offset-2" onClick="document.getElementById('Order2Plyr').play()">2 Order Song <i class="fa fa-play sr-icons"></i></a>
+                    </div>
                 </div>
                 <div class="collapse indent project-card" id="pyTutor">
 					<div class="row">
@@ -209,16 +229,16 @@
                     <h2 class="section-heading">Do you have any questions?</h2>
                     <hr class="primary">
                 </div>
-                <div class="col-md-2 col-md-offset-2 text-center contact-icon">
+                <div class="col-sm-2 col-sm-offset-2 text-center contact-icon">
                     <a href="https://www.flickr.com/jchamer"><i class="fa fa-flickr fa-3x sr-contact"></i></a>
                 </div>
-                <div class="col-md-2 text-center contact-icon">
+                <div class="col-sm-2 text-center contact-icon">
                     <a href="https://github.com/JCHamer"><i class="fa fa-github fa-3x sr-contact"></i></a>
                 </div>
-                <div class="col-md-2 text-center contact-icon">
+                <div class="col-sm-2 text-center contact-icon">
                     <a href="https://www.linkedin.com/in/jhamermesh"><i class="fa fa-linkedin-square fa-3x sr-contact"></i></a>
                 </div>
-                <div class="col-md-2 text-center contact-icon">
+                <div class="col-sm-2 text-center contact-icon">
                     <a href="mailto:jchamer@umich.edu"><i class="fa fa-envelope fa-3x sr-contact"></i></a>
                 </div>
             </div>
