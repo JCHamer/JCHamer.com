@@ -151,7 +151,7 @@
                     <div class="project-box">
                         <i class="fa fa-4x fa-music text-faded sr-icons"></i>
                         <h3>Musical Markov</h3>
-                        <p class="text-faded">Algorithmic Music Generation using markov chains to generate a sequence of notes and durations.</p>
+                        <p class="text-faded">Algorithmic Music Generation using Markov chains to generate music.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" data-toggle="collapse" data-target="#pyTutor">
@@ -159,7 +159,7 @@
                         <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
                         <!--<i class="icon icon ion-social-python text-faded sr-icons" style="font-size: 2.5em;"></i>-->
                         <h3>PyTutor</h3>
-                        <p class="text-faded">I worked with a friend to create an interactive python tutor for the <em>Hour of Code</em></p>
+                        <p class="text-faded">I built an interactive python tutor for the <em>Hour of Code</em> with a friend of mine.</p>
                     </div>
                 </div>
 				<div class="clearfix visible-md-block"></div>
@@ -186,10 +186,10 @@
                             <figcaption class="figure-caption text-center">Yankee Doodle</figcaption>
                             <img class="figure-img img-fluid img-center" src="img/YankeeDoodle.png">
                         </figure>
-						<p class="col-md-8">At the end of my Linear Algebra Class, my team of four decided to explore Algorithmic Music Generation. We studied the application of Markov Chains to music generation and mapped a sequential progression using the weights from the stochastic transition matrix as well as the previous state of the output in order to generate a sequence of musical notes and durations. Most of the code we wrote can be found <a href="https://github.com/JCHamer/MusicalMarkov">here</a>.</p>
+						<p class="col-md-8">At the end of my Linear Algebra Class, my team of four decided to explore Algorithmic Music Generation. We studied the application of Markov Chains to music generation and mapped a sequential progression using the weights from a transition matrix as well as previous notes in order to generate music. Most of the code we wrote can be found <a href="https://github.com/JCHamer/MusicalMarkov">here</a>.</p>
 					</div>
                     <div class="row">
-                        <p class="col-md-6">We decided to use Yankee Doodle to build our transition weights. I wrote a quick python script and read in all the notes and their durations, and then counted the number of appearances of 'g's out of the total notes and used that to build a naive 0-order transition matrix. I then counted the frequency of all the permutations of two note sequences to build the first order matrix that used a state value to determine the next note weights based on the note that was previously played. Following this, the count was a three note sequence to build the second order matrix in a similar manner. I also followed the exact same process to create transition matrices for each note duration that shows up in Yankee Doodle - quarter, eighth, dotted eighth and sixteenth note. After I had produced the transition matrices, a friend wrote a MATLAB script to simulate the sequence following my weights to produce a seqeunce of notes and corresponding durations. Afterwards I formatted the results and ran them through <a href="https://mdoege.github.io/PySynth/">PySynth</a>, a music synthesizer written in Python, which output a .wav file that sounded like a Piano playing the music that was input.</p>
+                        <p class="col-md-6">We decided to use Yankee Doodle to calculate our transition weights. I wrote a quick python script that read in all the notes and their durations, counted the number of appearances of each note, and output a table of the number of occurences of each note relative to the total number of notes. This was used that to build a basic 0-order transition matrix. Next, I counted the occurence of each two-note permutation to build the first order matrix that gave a weight for the next note based on the note that was just played. Following this, I counted three note sequences to build the second order matrix in a similar manner. Additionally, I followed the same process to create transition matrices for each note duration that shows up in Yankee Doodle - quarter, eighth, dotted eighth and sixteenth notes. After I had produced the transition matrices, a friend wrote a MATLAB script to simulate the sequence following my weights and produced a seqeunce of notes and their corresponding durations. Afterwards I formatted the results and ran them through <a href="https://mdoege.github.io/PySynth/">PySynth</a>, a music synthesizer written in Python, which outputs a .wav file that sounds like a Piano playing the music that we input. Some samples are available below.</p>
 
                         <img class="img-responsive col-md-6" src="img/MMDecisionTree.png">
 					</div>
@@ -209,7 +209,7 @@
                 </div>
                 <div class="collapse indent project-card" id="pyTutor">
 					<div class="row">
-						<p>I've run the <em>Hour of Code</em> for over 250 students! While preparing for the most recent </em>Hour of Code</em> I worked with a teacher to look at how we could provide High School students with a stronger background in Computer Science a more challenging experience where they would still be able to learn something new. After going back and forth, we settled on teaching the students some basic Python skills. Because I was going to be running the experience for an entire classroom at a time, I decided to look for a cheat-sheet for the students so that they could solve problems without needing my immediate help. After my search turned up nothing that was exactly what I wanted, I decided to make my own. I decided that there is no better way to make a cheat-sheet for Python than by using Python to make a cheat-sheet. I wrote a script to walk an inexperienced Programmer through the basics of Python! After I had in basic math functionality, I brought in a friend who helped suggested using <a href="http://pythonturtle.org/">turtle</a>, a python learning environment that lets a student use basic python skills to draw on their screen. Using my initial framework, we built a Python Tutor that walks a student through their first steps in Python!<br><br><a href="https://github.com/JCHamer/PyTutor">See the code!</a></p>
+						<p>I've run the <em>Hour of Code</em> for over 250 students! While preparing for the most recent </em>Hour of Code</em> I worked with a teacher to look at how we could provide High School students who already had experience in Computer Science a more challenging experience in order for them to still be able to learn something new. We settled on teaching the students some basic Python skills. As I was going to be running the event for an entire classroom at a time, I decided to make a cheat-sheet for the students to solve problems without needing my immediate help. I decided that there is no better way to make a cheat-sheet for Python than by using Python, so I wrote a script to walk an inexperienced Programmer through the basics of Python! After I had taught the tools needed for basic math, I brought in a friend who suggested using <a href="http://pythonturtle.org/">turtle</a>, a python learning environment that lets a student use simple python skills to draw (with a turtle). Using my initial framework, we expanded my Python Tutor to also walk a student through their first steps in Python!<br><br><a href="https://github.com/JCHamer/PyTutor">See the code!</a></p>
 					</div>
                 </div>
 				<div class="collapse indent project-card" id="mechKeyboard">
