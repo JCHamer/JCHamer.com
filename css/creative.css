@@ -473,12 +473,3 @@ body {
   }
 }
 
-.finally {
-  text-align: center;
-  margin: auto 0;
-}
-
-.finally span {
-  display: inline-block;
-  vertical-align: middle;
-}
